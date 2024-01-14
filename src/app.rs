@@ -13,7 +13,7 @@ pub fn App() -> impl IntoView {
         <Stylesheet id="leptos" href="/pkg/leptos_start.css"/>
 
         // sets the document title
-        <Title text="Welcome to Leptos"/>
+        <Title text="Lynix"/>
 
         // content for this welcome page
         <Router>
@@ -30,13 +30,10 @@ pub fn App() -> impl IntoView {
 /// Renders the home page of your application.
 #[component]
 fn HomePage() -> impl IntoView {
-    // Creates a reactive value to update the button
-    let (count, set_count) = create_signal(0);
-    let on_click = move |_| set_count.update(|count| *count += 1);
-
     view! {
-        <h1>"Welcome to Leptos!"</h1>
-        <button on:click=on_click>"Click Me: " {count}</button>
+        <img src="/assets/lynix.png"/>
+        <h1>"Welcome to lynix.ca!"</h1>
+        <p>"The Awoo Network is not fully operational yet, come back later!"<br/>        <div class="badge">"Core Services Operational"</div><br/>"Version: lynixca-rs v0.0.1"<br/>"(pspspsps this website running in wasm and rust!)"</p>
     }
 }
 

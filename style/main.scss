@@ -1,4 +1,25 @@
 body {
 	font-family: sans-serif;
 	text-align: center;
+	background-color: #0a0a0a;
+	color: #a3a3a3;
+}
+
+img {
+	max-width: 10rem;
+	margin-top: 5rem;
+}
+
+p {
+	font-size: 1.2rem;
+}
+
+.badge {
+	border-radius: 9999px;
+	background-color: #c2410c;
+	color: #0a0a0a;
+	font-weight: bolder;
+	padding: 0.5rem;
+	max-width: 14rem;
+	margin:auto;
 }
